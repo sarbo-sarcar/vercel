@@ -19,4 +19,4 @@ async def get_marks(request: Request):
     return JSONResponse(content={"marks": [m1, m2]})
 
 if __name__=="__main__":
-    uvicorn.run(app)
+    uvicorn.run("main:app", host="localhost", port=8000, reload=True)
