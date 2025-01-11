@@ -1,7 +1,8 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "main:app",  
+      "src": "main.py",
       "use": "@vercel/python"
     }
   ],
@@ -11,9 +12,5 @@
       "dest": "main:app"
     }
   ],
-  "static": {
-    "includeFiles": [
-      "q-vercel-python.json" 
-    ]
-  }
+  "ignoreCommand": "echo 'No files ignored'"
 }
