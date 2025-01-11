@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "main:app",  // Replace 'main:app' with your FastAPI entrypoint file
+      "src": "main:app",  
       "use": "@vercel/python"
     }
   ],
@@ -13,7 +13,7 @@
   ],
   "static": {
     "includeFiles": [
-      "q-vercel-python.json" // Ensure this file is deployed
+      "q-vercel-python.json" 
     ]
   }
 }
